@@ -40,8 +40,11 @@ function getTasks() {
 
         tasksView.innerHTML += ` <div class="card mb-2">
             <div class="card-body">
-                <p>${title} - ${description}</p>
+                <spam>${title} - ${description} </spam>
+            <div class="d-grid justify-content-md-end">
                 <a class="btn btn-danger" onclick="deleteTask('${title}')">Eliminar</a>
+            </div>
+                
             </div>
         </div> `
 
