@@ -38,13 +38,13 @@ function getTasks() {
         let description = tasks[i].description;
 
 
-        tasksView.innerHTML += ` <div class="card mb-2">
-            <div class="card-body">
-                <spam>${title} - ${description} </spam>
-            <div class="d-grid justify-content-md-end">
-                <a class="btn btn-danger" onclick="deleteTask('${title}')">Eliminar</a>
-            </div>
-                
+        tasksView.innerHTML += ` <div class="card mb-2 targets">
+            <h4 class="card-header text-center">${title} </h4>
+            <div class="card-body text-center">
+                <p>${description} </p>
+                <div class="text-center">
+                    <a class="btn btn-danger" onclick="deleteTask('${title}')">Eliminar</a>
+                </div>
             </div>
         </div> `
 
